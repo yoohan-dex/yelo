@@ -1,0 +1,33 @@
+{
+  "name": "yelo",
+  "version": "0.9.9",
+  "description": "a single store",
+  "main": "dist/src/index.js",
+  "author": "dexter",
+  "license": "MIT",
+  "scripts": {
+    "watch": "tsc -w",
+    "compile": "tsc",
+    "tslint": "tslint -p tsconfig.json -c tslint.json --type-check",
+    "test:watch": "jest --watch #runs jest -o by default"
+  },
+  "jest": {
+    "transform": {
+      ".(ts|tsx)": "<rootDir>/node_modules/ts-jest/preprocessor.js"
+    },
+    "testRegex": "(/__tests__/.*|\\.(test|spec))\\.(ts|tsx)$",
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js"
+    ]
+  },
+  "devDependencies": {
+    "@types/jest": "^19.2.2",
+    "@types/node": "^7.0.12",
+    "tslint": "^5.0.0",
+    "typescript": "^2.2.2",
+    "jest": "^19.0.2",
+    "ts-jest": "^19.0.10"
+  }
+}
